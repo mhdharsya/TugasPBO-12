@@ -19,6 +19,8 @@ public class faktur implements hitungTotalBayar {
         this.nomorFaktur = nomorFaktur;
         this.namaPelanggan = namaPelanggan;
         this.nomorHp = nomorHp;
+        this.alamat = alamat;
+        this.kodeBarang = kodeBarang;
         this.namaBarang = namaBarang;
         this.hargaBarang = hargaBarang;
         this.jumlahBeli = jumlahBeli;
@@ -61,7 +63,7 @@ public class faktur implements hitungTotalBayar {
         System.out.println("INDOMARET");
         System.out.println("Tanggal : " + tanggal.format(date));
         System.out.println("Jam : " + jam.format(date));
-        System.out.println("Nomor Faktur: " + nomorFaktur);
+        System.out.println("Nomor Faktur: " + nomorFaktur.toUpperCase());
         System.out.println("=======================");
         System.out.println("DATA PELANGGAN");
         System.out.println("Nama Pelanggan: " + namaPelanggan);
@@ -70,7 +72,7 @@ public class faktur implements hitungTotalBayar {
         System.out.println("+++++++++++++++++++");
         System.out.println("DATA PEMBELIAN BARANG");
         System.out.println("------------------");
-        System.out.println("Kode Barang : " + kodeBarang);
+        System.out.println("Kode Barang : " + kodeBarang.toUpperCase());
         System.out.println("Nama Barang: " + namaBarang);
         System.out.println("Harga Barang: " + hargaBarang);
         System.out.println("Jumlah Beli: " + jumlahBeli);
